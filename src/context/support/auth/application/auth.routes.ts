@@ -32,6 +32,11 @@ class AuthRoutes extends CommonRoutesConfig {
     this.api.route("/readme")  
       .get((req: express.Request, res: express.Response) => {
        let saludate = "<h1>Bienvenido a la API de Prueba _(🔅.🔅)_ !!!</h1>";
+        saludate += `Ingresa a <a href="http://localhost:3000/auth/github">Autenticar con cuenta de Github </a>`
+        saludate += `Ingresa a los endpoints GET <a href="http://localhost:3000/v1/customers">Listar clientes </a>`
+        saludate += `POST <a href="http://localhost:3000/v1/customers">Registrar un nuevo cliente </a>`
+        saludate += "Ver la documentación comleta en el README"
+
       res.status(status.SUCCESS).send(saludate);
     });
     this.api.route("/unauthorized")

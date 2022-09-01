@@ -17,13 +17,13 @@ services:
       - MONGO_INITDB_DATABASE=bolivar_db
       #- MONGO_INITDB_ROOT_USERNAME=root
       #- MONGO_INITDB_ROOT_PASSWORD=developer
-  webapp:
+  api:
     image: bitnami/node:latest
     command: npm run dev
     expose: 
       - '3000' 
     ports:
-      - '3000:3000'
+      - 3000:3000
     volumes:
       - ./:/app
       - ./nodemon.json:/app/nodemon.json
