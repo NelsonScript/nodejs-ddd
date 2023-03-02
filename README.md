@@ -1,7 +1,7 @@
 # Test
 Pruebas para el Proceso en Seguros Bolivar
 
-La app es una API Servicio donde se guarda y consulta la información básica de clientes(Nombres completos, tipos de documento y número de documento). Para hacer uso del servicio se debe antenticar con las credenciales de una cuenta válida en Github.
+La app es una API Servicio donde se guarda y consulta la información básica de clientes(Nombres completos, tipos de documento y número de documento). Para hacer uso del servicio se debe autenticar con las credenciales de una cuenta válida en Github.
 
 ## Instrucciones
 
